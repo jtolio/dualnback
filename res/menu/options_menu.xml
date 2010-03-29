@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/start_game"
+          android:title="Start" />
+    <item android:id="@+id/stop_game"
+          android:title="Stop" />
+    <item android:id="@+id/enable_sound"
+          android:title="Enable sound" />
+    <item android:id="@+id/disable_sound"
+          android:title="Disable sound" />
+</menu>

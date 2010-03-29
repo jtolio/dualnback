@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dual N Back</string>
+    <string name="visual_button">Position</string>
+    <string name="auditory_button">Letter</string>
+    <string name="both_button">Both</string>
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="larger_n_button">Larger</string>
+    <string name="smaller_n_button">Smaller</string>
+
+    <string name="status_stopped">Use the menu to start.</string>
+</resources>
