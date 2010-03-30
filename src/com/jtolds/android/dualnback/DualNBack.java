@@ -22,7 +22,7 @@ public class DualNBack extends Activity {
     private Random GENERATOR = new Random();
     private long MILLIS_BETWEEN_TICKS = 3000;
     private int DATA_CHECK_CODE_1 = 1;
-    private double CHOOSE_MATCH_PROB = .25;
+    private double CHOOSE_MATCH_PROB = .1;
 
     private boolean m_gameRunning = false;
     private boolean m_auditoryClicked = false;
@@ -292,8 +292,9 @@ public class DualNBack extends Activity {
         } else {
             String status = "";
 
+            m_trials += 2;
+
             if(m_letterHistory[0] == m_letterHistory[m_n]) {
-                m_trials += 1;
                 if(m_auditoryClicked) {
                     status += " - GOT LETTER!";
                     m_successes += 1;
@@ -303,12 +304,12 @@ public class DualNBack extends Activity {
             } else {
                 if(m_auditoryClicked) {
                     status += " - NO LETTER!";
-                    m_successes -= 1;
+                } else {
+                    m_successes += 1;
                 }
             }
 
             if(m_positionHistory[0] == m_positionHistory[m_n]) {
-                m_trials += 1;
                 if(m_visualClicked) {
                     status += " - GOT POSITION!";
                     m_successes += 1;
@@ -318,7 +319,8 @@ public class DualNBack extends Activity {
             } else {
                 if(m_visualClicked) {
                     status += " - NO POSITION!";
-                    m_successes -= 1;
+                } else {
+                    m_successes += 1;
                 }
             }
 
