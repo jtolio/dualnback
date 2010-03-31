@@ -26,6 +26,24 @@
                 android:layout_weight="0"/>
     </LinearLayout>
 
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_weight="0">
+        <TextView android:id="@+id/status"
+                android:text="@string/status_stopped"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        <TextView android:id="@+id/skill"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"/>
+    </LinearLayout>
 
     <LinearLayout
             android:orientation="horizontal"
@@ -177,24 +195,6 @@
                 android:layout_height="fill_parent"
                 android:text="@string/auditory_button"
                 android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0">
-        <TextView android:id="@+id/status"
-                android:text="@string/status_stopped"
-                android:gravity="left"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-        <TextView android:id="@+id/skill"
-                android:gravity="right"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"/>
     </LinearLayout>
 
 </LinearLayout>
